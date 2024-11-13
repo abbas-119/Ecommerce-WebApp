@@ -1,23 +1,93 @@
 <template>
-  <div class="navbar">
-    <div class="logo">DECORPLEX</div>
-    <input type="text" placeholder="What are you looking for?" class="search-bar" />
-    <div class="links">
-      <a href="#">Sign Up Now Get Exclusive Benefits</a>
-      <i class="fas fa-heart"></i>
-      <i class="fas fa-shopping-cart"></i>
+  <div>
+    <div class="navbar flex items-center justify-between bg-white p-12">
+      <div class="logo text-2xl font-bold text-red-700">DECORPLEX</div>
+      <div class="flex items-center">
+        <input type="text" placeholder="What are you looking for?" class="search-bar p-1.5 w-96 border rounded-l-md"/>
+        <button class="bg-gray-200 p-1.5 border rounded-r-md">
+          <font-awesome-icon :icon="['fas', 'search']" />
+        </button>
+      </div>
+      <div class="links flex items-center">
+        <a href="#" class="mr-2.5 text-yellow-500">Sign Up Now Get Exclusive Benefits</a>
+        <font-awesome-icon :icon="['fas', 'heart']" class="text-red-500" />
+        <font-awesome-icon :icon="['fas', 'shopping-cart']" class="text-yellow-500 ml-2.5" />
+      </div>
     </div>
-    <div class="categories">
-      <a href="#">Furniture</a>
-      <a href="#">Outdoor</a>
-      <a href="#">Decor</a>
-      <a href="#">Lights</a>
-      <a href="#">Furnishings</a>
-      <a href="#">Kitchen</a>
-      <a href="#">Tools</a>
-      <a href="#">Bath</a>
-      <a href="#">Tiles</a>
-      <button class="sale-button">Sale</button>
+    <div class="categories flex justify-around w-full mt-2.5">
+      <div class="relative group">
+        <div class="flex items-center mx-2.5 text-black hover:bg-gray-100 p-2 rounded-md">
+          <a href="#">Door Handles</a>
+          <font-awesome-icon :icon="['fas', 'chevron-down']" class="ml-1" />
+        </div>
+        <!-- Dropdown for Door Handles -->
+        <div class="absolute hidden group-hover:block bg-white border mt-1 w-48">
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type A</a>
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type B</a>
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type C</a>
+        </div>
+      </div>
+      <div class="relative group">
+        <div class="flex items-center mx-2.5 text-black hover:bg-gray-100 p-2 rounded-md">
+          <a href="#">Door knobs</a>
+          <font-awesome-icon :icon="['fas', 'chevron-down']" class="ml-1" />
+        </div>
+        <!-- Dropdown for Door knobs -->
+        <div class="absolute hidden group-hover:block bg-white border mt-1 w-48">
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type A</a>
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type B</a>
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type C</a>
+        </div>
+      </div>
+      <div class="relative group">
+        <div class="flex items-center mx-2.5 text-black hover:bg-gray-100 p-2 rounded-md">
+          <a href="#">Door Locks</a>
+          <font-awesome-icon :icon="['fas', 'chevron-down']" class="ml-1" />
+        </div>
+        <!-- Dropdown for Door Locks -->
+        <div class="absolute hidden group-hover:block bg-white border mt-1 w-48">
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type A</a>
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type B</a>
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type C</a>
+        </div>
+      </div>
+      <div class="relative group">
+        <div class="flex items-center mx-2.5 text-black hover:bg-gray-100 p-2 rounded-md">
+          <a href="#">Hinges</a>
+          <font-awesome-icon :icon="['fas', 'chevron-down']" class="ml-1" />
+        </div>
+        <!-- Dropdown for Hinges -->
+        <div class="absolute hidden group-hover:block bg-white border mt-1 w-48">
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type A</a>
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type B</a>
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type C</a>
+        </div>
+      </div>
+      <div class="relative group">
+        <div class="flex items-center mx-2.5 text-black hover:bg-gray-100 p-2 rounded-md">
+          <a href="#">Cabinet Handles</a>
+          <font-awesome-icon :icon="['fas', 'chevron-down']" class="ml-1" />
+        </div>
+        <!-- Dropdown for Cabinet Handles -->
+        <div class="absolute hidden group-hover:block bg-white border mt-1 w-48">
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type A</a>
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type B</a>
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type C</a>
+        </div>
+      </div>
+      <div class="relative group">
+        <div class="flex items-center mx-2.5 text-black hover:bg-gray-100 p-2 rounded-md">
+          <a href="#">Tools</a>
+          <font-awesome-icon :icon="['fas', 'chevron-down']" class="ml-1" />
+        </div>
+        <!-- Dropdown for Tools -->
+        <div class="absolute hidden group-hover:block bg-white border mt-1 w-48">
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type A</a>
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type B</a>
+          <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Type C</a>
+        </div>
+      </div>
+      <button class="sale-button bg-red-700 text-white border-none p-1.5">Sale</button>
     </div>
   </div>
 </template>
@@ -29,45 +99,5 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-}
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #d32f2f;
-}
-.search-bar {
-  margin: 10px 0;
-  padding: 5px;
-  width: 300px;
-}
-.links {
-  display: flex;
-  align-items: center;
-}
-.links a {
-  margin-right: 10px;
-  color: #ff9800;
-}
-.categories {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 10px;
-}
-.categories a {
-  margin: 0 10px;
-  color: black;
-}
-.sale-button {
-  background-color: #d32f2f;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-}
+/* Tailwind CSS handles the styling */
 </style>
