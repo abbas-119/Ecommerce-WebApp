@@ -14,17 +14,20 @@
         </div>
       </div>
       <div class="navbar flex items-center justify-between bg-white p-12">
-        <div class="logo text-2xl font-bold text-yellow-700">DECORPLEX</div>
-        <div class="flex items-center">
-          <input type="text" placeholder="What are you looking for?" class="search-bar p-1.5 w-96 border rounded-l-md"/>
+        <div class="logo">
+          <img src="@/assets/Decorplex Logo.png" alt="Decorplex Logo" class="h-21 w-60 object-contain" />
+        </div>
+        <div class="flex items-center flex-grow max-w-lg ml-6">
+          <input type="text" placeholder="What are you looking for?" class="search-bar p-1.5 w-full border rounded-l-md" />
           <button class="bg-gray-200 p-1.5 border rounded-r-md">
             <font-awesome-icon :icon="['fas', 'search']" />
           </button>
         </div>
-        <div class="links flex items-center">
-          <a href="#" class="mr-2.5 text-yellow-500">Sign Up Now</a>
+        <div class="links flex items-center ml-4">
+          <a href="#" class="text-yellow-500">Sign Up Now</a>
         </div>
       </div>
+
       <div class="categories flex justify-around w-full mt-2.5">
         <div class="relative group">
           <div class="flex items-center mx-2.5 text-black hover:bg-gray-100 p-2 rounded-md">
